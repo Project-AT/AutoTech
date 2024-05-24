@@ -26,3 +26,5 @@ MoreJei.addDescription(<trutils:evil_stone>, [game.localize("thirdrebirth.descri
 MoreJei.addDescription(<trutils:equivalent_fuel>, [game.localize("thirdrebirth.description.trutils:equivalent_fuel")]);
 //水果采集组件
 MoreJei.addDescription(<teslathingies:fruit_picker_addon>, [game.localize("thirdrebirth.description.trutils:fruit_picker_addon")]);
+//高压能量激发器
+MoreJei.addDescription(<embers:boiler>, [game.localize("thirdrebirth.description.trutils:boiler")]);

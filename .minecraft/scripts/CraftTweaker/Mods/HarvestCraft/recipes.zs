@@ -114,3 +114,11 @@ recipes.addShapeless(<harvestcraft:garlicsteakitem>,
 recipes.addShapeless(<harvestcraft:gigapickleseeditem>,
     [<ore:foodGigapickle>]
 );
+
+recipes.addShapeless(<harvestcraft:hardenedleatheritem>,
+    [<ore:itemLeather>, <mysticalworld:tannins>.giveBack(<minecraft:glass_bottle>), <ore:materialPressedwax>]
+);
+
+recipes.addShapeless(<harvestcraft:hardenedleatheritem>,
+    [<ore:feyLeather>, <ore:materialPressedwax>]
+);

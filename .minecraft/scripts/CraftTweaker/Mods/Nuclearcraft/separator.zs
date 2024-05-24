@@ -33,7 +33,7 @@ var seedToOil as IIngredient[] = [
 
 var juicedCropName as string[] = [
     "Cactusfruit", "Plum", "Lime", "Apricot", "Kiwi", "Pomegranate", "Pear", "Grapefruit", "Apple", "Strawberry", "Orange", "Persimmon", "Blackberry", "Peach", "Cranberry",
-    "Raspberry", "Papaya", "Blueberry", "Cherry", "Fig", "Starfruit", "Mango", "Melon"
+    "Raspberry", "Papaya", "Blueberry", "Cherry", "Fig", "Starfruit", "Mango"
 ];
 
 for outputs, input in harvestcraftPresser {
@@ -52,3 +52,5 @@ for cropName in juicedCropName {
         Separator.addRecipe(crop, juice, <harvestcraft:fruitbaititem>, 0.0625);
     }
 }
+
+Separator.addRecipe(<minecraft:melon>, <harvestcraft:melonjuiceitem>, <harvestcraft:fruitbaititem>, 0.0625);

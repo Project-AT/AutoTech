@@ -22,6 +22,7 @@ thirdrebirth.description.mysticalworld.gall_apple=把黄蜂诱引剂放置在橡
 thirdrebirth.description.trutils.evil_stone=将邪恶之石按照常见的地狱门样式搭建, 即高5格宽4格的框架, 然后在以邪恶之石为中心的半径4格范围内击杀怪物, 使邪恶之石积累气血。当作为框架的邪恶之石全都满了之后，便可以使用打火石点火激活传送门，打开通往地狱的道路。
 thirdrebirth.description.trutils:equivalent_fuel=将可燃烧的物品放入燃烧仓中，便可以将其转化成等量的燃料等价物。
 thirdrebirth.description.trutils:fruit_picker_addon=将该组件放入农场机器内，使农场机器能够采集工作范围内的果树的水果（潘马斯农场）。
+thirdrebirth.description.trutils:boiler=最高产能倍数：\n2.62x：铁、青铜、铅 \n2.85x：镍、锡、铝 \n3x：金、铜、银、玫瑰金、琥珀金 \n3.75x：黎明金 \n4.5x：充能银 \n6x：信素
 
 #JEI TITLE
 jei.magnetic_attraction.title=仪式 - 磁力吸引

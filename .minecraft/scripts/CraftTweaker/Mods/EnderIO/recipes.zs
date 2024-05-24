@@ -139,7 +139,7 @@ electronicAssembly.addRecipe("engineer", true, <enderio:item_basic_capacitor:2>,
     [null, <ore:ingot_dark_soularium>]
 ], {<ore:artisansSolderer> : 12, <ore:artisansDriver> : 16} as int[IIngredient]);
 
-RecipeUtils.recipeTweak(true, <enderio:item_material:52>, [
+RecipeUtils.recipeTweak(true, <enderio:item_material:52> * 4, [
     [<ore:dustSoularium>, <ore:dustFluix>, <enderio:item_material:49>],
     [<ore:dustFluix>, <enderio:item_material:50>, <ore:dustFluix>],
     [<enderio:item_material:49>, <ore:dustFluix>, <ore:dustSoularium>]

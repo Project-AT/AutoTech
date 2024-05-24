@@ -13,6 +13,7 @@ var fuels as int[IIngredient] = {
     <ore:blockCharcoal> : 8000,
     <contenttweaker:blast_furnace_fuel> : 6400,
     <primal_tech:charcoal_hopper> : 16000,
+    <forge:bucketfilled>.withTag({FluidName: "biodiesel", Amount: 1000}) : 17500,
 };
 
 for fuel, burnTime in fuels {

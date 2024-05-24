@@ -175,7 +175,7 @@ val specialStageItemStackMap as IIngredient[][string] = {
         <contenttweaker:contains_impurities_silicon_dust>, <contenttweaker:silicon_dust>, <ore:itemSilicon>, <ore:waferSilicon>, <ore:circuitBasic>, <contenttweaker:si_transistor>,
     ],
     "Enderium" : [
-        <ore:ingotEnderium>, <ore:endstone>, <integrateddynamics:crystalized_chorus_chunk>, <integrateddynamics:crystalized_chorus_brick_stairs>,
+        <ore:endstone>, <integrateddynamics:crystalized_chorus_chunk>, <integrateddynamics:crystalized_chorus_brick_stairs>,
         <integrateddynamics:crystalized_chorus_block_stairs>, <integrateddynamics:crystalized_chorus_block>, <integrateddynamics:crystalized_chorus_brick>, <enderio:item_material:39>
     ],
     "ductdynamic" : [
@@ -255,9 +255,10 @@ val exceptItemStacks as IIngredient[] = [
     <appliedenergistics2:sky_stone_chest>, <appliedenergistics2:smooth_sky_stone_chest>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_vibrant_glass>,
     <appliedenergistics2:tiny_tnt>, <appliedenergistics2:sky_stone_stairs>, <appliedenergistics2:smooth_sky_stone_stairs>, <appliedenergistics2:sky_stone_brick_stairs>,
     <appliedenergistics2:sky_stone_small_brick_stairs>, <appliedenergistics2:sky_stone_slab>, <appliedenergistics2:smooth_sky_stone_slab>, <appliedenergistics2:sky_stone_brick_slab>,
-    <appliedenergistics2:sky_stone_small_brick_slab>, <appliedenergistics2:light_detector>, <ore:crystalPureNetherQuartz>, 
+    <appliedenergistics2:sky_stone_small_brick_slab>, <appliedenergistics2:light_detector>, <ore:crystalPureNetherQuartz>, <ore:dustTritanium>,
     <appliedenergistics2:crystal_seed:600>, <appliedenergistics2:crystal_seed:600>.withTag({progress: 800}), <appliedenergistics2:crystal_seed:600>.withTag({progress: 1000}),
-    <ore:plateTitanium>, <ore:gearTitanium>, <ore:stickTitanium>, <ore:blockTitanium>, <ore:oreTritanium>
+    <ore:plateTitanium>, <ore:gearTitanium>, <ore:stickTitanium>, <ore:blockTitanium>, <ore:oreTritanium>, <matteroverdrive:dilithium_crystal>, <ore:nuggetTritanium>, <ore:plateTritanium>,
+    <matteroverdrive:tritanium_helmet>, <matteroverdrive:tritanium_chestplate>, <matteroverdrive:tritanium_leggings>, <matteroverdrive:tritanium_boots>, <contenttweaker:dilithium_dust>,
 ];
 
 for stage, items in specialStageItemStackMap {

@@ -300,17 +300,24 @@ for ore in oreDict.entries {
         var ingot as IOreDictEntry = ore;
 
         if (!plate.empty) {
-            Rollingmachine.addRecipe([plate.firstItem % 100], 50, 160, [ingot]);
+            Rollingmachine.addRecipe([plate.firstItem % 100], 150, 80, [ingot], [<liquid:water> * 100]);
             if (!sheet.empty) {
-                Rollingmachine.addRecipe([sheet.firstItem % 100], 50, 160, [plate]);
+                Rollingmachine.addRecipe([sheet.firstItem % 100], 150, 80, [plate], [<liquid:water> * 100]);
+            }
+        }
+
+        if (!plate.empty) {
+            Rollingmachine.addRecipe([plate.firstItem % 100], 150, 20, [ingot], [<liquid:lubricant> * 5]);
+            if (!sheet.empty) {
+                Rollingmachine.addRecipe([sheet.firstItem % 100], 150, 20, [plate], [<liquid:lubricant> * 5]);
             }
         }
 
         if (!rod.empty) {
-            Lathe.addRecipe([rod.firstItem * 3 % 100], 50, 100, [ingot], [<liquid:water> * 100]);
+            Lathe.addRecipe([rod.firstItem * 3 % 100], 100, 20, [ingot]);
         }
         else if (!stick.empty) {
-            Lathe.addRecipe([stick.firstItem * 3 % 100], 50, 100, [ingot], [<liquid:water> * 100]);
+            Lathe.addRecipe([stick.firstItem * 3 % 100], 100, 20, [ingot]);
         }
     }
 }

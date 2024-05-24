@@ -23,6 +23,7 @@ thirdrebirth.description.mysticalworld.gall_apple=Place the wasp attractant on t
 thirdrebirth.description.trutils.evil_stone=Build the evil stone in the common style of Nether Gate, that is, a frame with a height of 5 blocks and a width of 4 blocks. Then kill mobs within a radius of 4 blocks centered on the evil stone, so that the evil stone can accumulate energy. When all the evil stones used as the frame are full, you can use the flint and steel to ignite the portal and then you can go to the nether.
 thirdrebirth.description.trutils:equivalent_fuel=Put burnable Items into the Bunker, which can be equivalently converted into Equivalent Fuels.
 thirdrebirth.description.trutils:fruit_picker_addon=Put this addon into the Farm Machine to pick fruits from fruit trees (Pam‘s HarvestCraft) within the work area.
+thirdrebirth.description.trutils:boiler=Maximum Production Multiplier: \n2.62x: Iron, Bronze, Lead \ n2.85x: Nickel, Tin, Aluminium \n3x: Gold, Copper, Silver, Rose Gold, Electrum \n3.75x: Dawnstone \n4.5x: Energetic Silver \n6x: Signalum
 
 #JEI TITLE
 jei.magnetic_attraction.title=Ritual - Magnetic Attraction

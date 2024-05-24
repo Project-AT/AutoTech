@@ -4,6 +4,8 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
+import mods.artisanworktables.builder.RecipeBuilder;
+
 import scripts.grassUtils.RecipeUtils;
 
 RecipeUtils.recipeTweak(true, <extendedcrafting:table_advanced>, [
@@ -121,3 +123,19 @@ recipes.removeShaped(<minecraft:nether_star>, [
     [<extendedcrafting:material:140>, <extendedcrafting:material:140>, <extendedcrafting:material:140>],
     [<extendedcrafting:material:140>, <extendedcrafting:material:140>, <extendedcrafting:material:140>]
 ]);
+
+recipes.remove(<extendedcrafting:ender_alternator>);
+recipes.remove(<extendedcrafting:ender_crafter>);
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<ore:ingotVibrantAlloy>, <ore:pearlEnderEye>, <ore:ingotVibrantAlloy>],
+    [<ore:ingotVibrantAlloy>, <ore:gemDilithium>, <ore:ingotVibrantAlloy>],
+    [<ore:ingotEnderiumBase>, <ore:ingotEnderiumBase>, <ore:ingotEnderiumBase>]])
+  .setSecondaryIngredients([<contenttweaker:teleport_rune>])
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addTool(<ore:artisansSpanner>, 35)
+  .setMinimumTier(0)
+  .setMaximumTier(1)
+  .addOutput(<extendedcrafting:ender_alternator>)
+  .create();

@@ -11,7 +11,6 @@ import scripts.grassUtils.RecipeUtils;
 import scripts.CraftTweaker.Utils.artisanUtils;
 import scripts.CraftTweaker.Mods.ModularMachinery.machine.electronicAssembly;
 
-
 var recipeNames = [
     "embers:block_tank",
 ] as string[];
@@ -298,6 +297,6 @@ for Ingot in emberIngot {
 }
 
 EmberGeneration.addMetalCoefficient(<ore:blockRoseGold>.firstItem, 1);
-EmberGeneration.addMetalCoefficient(<embers:block_dawnstone>, 1);
+EmberGeneration.addMetalCoefficient(<embers:block_dawnstone>, 1.5);
 EmberGeneration.addMetalCoefficient(<ore:blockEnergeticSilver>, 2);
 EmberGeneration.addMetalCoefficient(<ore:blockSignalum>, 3);

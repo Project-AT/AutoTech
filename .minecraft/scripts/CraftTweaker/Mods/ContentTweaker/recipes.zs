@@ -66,16 +66,6 @@ RecipeUtils.recipeTweak(false, <ore:dustRoseGold>.firstItem * 2, [
     [<ore:dustCopper>, <ore:dustGold>]
 ]);
 
-//手动驱魔配方
-RecipeUtils.recipeTweak(false, <contenttweaker:pure_iron_ingot>, [
-    [<botania:spellcloth>, <botania:manaresource>]
-]);
-
-//手动驱魔配方
-RecipeUtils.recipeTweak(false, <ore:blockPureIron>.firstItem, [
-    [<botania:spellcloth>, <botania:storage>]
-]);
-
 artisanUtils.RecipeTweakWithTools("basic", true, <contenttweaker:refractory_clay_ball> * 7, [
     [<ore:clayBall>, <ore:clayBall>, <ore:clayBall>],
     [<ore:dustCoal>, <ore:clayBall>, <ore:dustQuartz>],
@@ -167,7 +157,7 @@ RecipeUtils.recipeTweak(true, <contenttweaker:inactive_energytablet>, [
 
 RecipeUtils.recipeTweak(false, <contenttweaker:inactive_view_cell>, [[<appliedenergistics2:view_cell>]]);
 RecipeUtils.recipeTweak(true, <contenttweaker:inactive_view_cell>, [
-    [null, <ore:fusedGlass>, null],
+    [null, <ore:blockGlass>, null],
     [<ore:ingotSmithingIron>, <contenttweaker:research_point_lv1>, <ore:ingotSmithingIron>],
     [null, <ore:ingotSmithingIron>, null]
 ]);
@@ -189,3 +179,5 @@ RecipeBuilder.get("designer")
   .setMinimumTier(0)
   .setMaximumTier(1)
   .create();
+
+recipes.addShapeless(<minecraft:book>, [<contenttweaker:dictionary_paper> | <contenttweaker:research_point_lv0>, <ore:string>, <ore:leather>]);

@@ -10,6 +10,7 @@ function tableCraftingUtils(output as IItemStack, input as IIngredient[][]) {
 	recipes.remove(output.withAmount(1));
 	TableCrafting.addShaped(0, output, input);
 }
+
 //高级合成#############################################################################################
 //合成核心
 TableCrafting.remove(<extendedcrafting:crafting_core>);
@@ -225,4 +226,95 @@ tableCraftingUtils(<draconicevolution:crafting_injector:3>, [
 	[<ore:alloyUltimate>, <ore:gemDilithium>, <ore:ingotDraconiumAwakened>, <ore:ingotExtreme>, <rftools:dimensional_shard>, <ore:ingotExtreme>, <ore:ingotDraconiumAwakened>, <ore:gemDilithium>, <ore:alloyUltimate>], 
 	[<ore:alloyUltimate>, <matteroverdrive:s_magnet>, <ore:ingotExtreme>, <ore:ingotDraconiumAwakened>, <ore:alloyUltimate>, <ore:ingotDraconiumAwakened>, <ore:ingotExtreme>, <matteroverdrive:s_magnet>, <ore:alloyUltimate>], 
 	[<ore:alloyUltimate>, <ore:ingotDraconiumAwakened>, <matteroverdrive:s_magnet>, <ore:gemDilithium>, <ore:ingotExtreme>, <ore:gemDilithium>, <matteroverdrive:s_magnet>, <ore:ingotDraconiumAwakened>, <ore:alloyUltimate>]
+]);
+
+
+//简化配方系列
+//高级
+mods.extendedcrafting.TableCrafting.addShaped(0, <immersiveengineering:metal_decoration0:4> * 2, [
+	[null, null, <ore:plateIron>, null, null], 
+	[null, <ore:plateIron>, <ore:ingotCopper>, <ore:plateIron>, null], 
+	[<ore:plateIron>, <ore:ingotCopper>, <ore:gearBronze>, <ore:ingotCopper>, <ore:plateIron>], 
+	[null, <ore:plateIron>, <ore:ingotCopper>, <ore:plateIron>, null], 
+	[null, null, <ore:plateIron>, null, null]
+]);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <immersiveengineering:metal_decoration0:5> * 2, [
+	[null, null, <ore:plateSteel>, null, null], 
+	[null, <ore:plateSteel>, <ore:ingotBronze>, <ore:plateSteel>, null], 
+	[<ore:plateSteel>, <ore:ingotSteel>, <ore:gearElectrum>, <ore:ingotSteel>, <ore:plateSteel>], 
+	[null, <ore:plateSteel>, <ore:ingotBronze>, <ore:plateSteel>, null], 
+	[null, null, <ore:plateSteel>, null, null]
+]);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <embers:mech_core> * 2, [
+	[null, <ore:plateIron>, <ore:plateSteel>, <ore:plateIron>, null], 
+	[<ore:plateLead>, <ore:plateSteel>, <ore:ingotBronze>, <ore:plateSteel>, <ore:plateLead>], 
+	[<ore:plateSteel>, <ore:ingotSteel>, <ore:gearElectrum>, <ore:ingotSteel>, <ore:plateSteel>], 
+	[<ore:plateLead>, <ore:plateSteel>, <ore:ingotBronze>, <ore:plateSteel>, <ore:plateLead>], 
+	[null, <ore:plateIron>, <ore:plateSteel>, <ore:plateIron>, null]
+]);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <minecraft:crafting_table>, [
+	[null, null, <ore:leather>, null, null], 
+	[null, <ore:plankWood>, <ore:plankWood>, <ore:plankWood>, null], 
+	[<ore:plankWood>, <ore:plankWood>, <ore:logWood>, <ore:plankWood>, <ore:plankWood>], 
+	[<ore:plankTreatedWood>, <ore:plankWood>, <ore:ingotIron>, <ore:plankWood>, <ore:plankTreatedWood>], 
+]);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <artisanworktables:worktable:5>, [
+	[null, <ore:plankWood>, <ore:leather>, <ore:plankWood>, null], 
+	[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
+	[<ore:plankWood>, <ore:plankTreatedWood>, <ore:logWood>, <ore:plankTreatedWood>, <ore:plankWood>], 
+	[<ore:plankWood>, <ore:plankWood>, <ore:ingotIron>, <ore:plankWood>, <ore:plankWood>], 
+	[<ore:plankWood>, <ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>, <ore:plankWood>]
+]);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <nuclearcraft:part:10>, [
+	[<ore:ingotHardCarbon>, <ore:plateSteel>, <ore:barsIron>, <ore:plateSteel>, <ore:ingotHardCarbon>], 
+	[<ore:plateSteel>, <ore:ingotDarkSteel>, null, <ore:ingotDarkSteel>, <ore:plateSteel>], 
+	[<ore:barsIron>, null, <pneumaticcraft:printed_circuit_board>, null, <ore:barsIron>], 
+	[<ore:plateSteel>, <ore:ingotIron>, <ore:dyeMachine>, <ore:ingotIron>, <ore:plateSteel>], 
+	[<ore:ingotHardCarbon>, <ore:plateSteel>, <ore:barsIron>, <ore:plateSteel>, <ore:ingotHardCarbon>]
+]);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <nuclearcraft:part:12>, [
+	[<ore:ingotIronCompressed>, <ore:plateSteel>, <ore:barsIron>, <ore:plateSteel>, <ore:ingotIronCompressed>], 
+	[<ore:plateSteel>, <ore:ingotDarkSteel>, null, <ore:ingotDarkSteel>, <ore:plateSteel>], 
+	[<ore:barsIron>, null, <ore:ingotBronze>, null, <ore:barsIron>], 
+	[<ore:plateSteel>, <ore:ingotIron>, <ore:dyeMachine>, <ore:ingotIron>, <ore:plateSteel>], 
+	[<ore:ingotIronCompressed>, <ore:plateSteel>, <ore:barsIron>, <ore:plateSteel>, <ore:ingotIronCompressed>]
+]);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <advancedrocketry:misc>, [
+	[<ore:plasticBlack>, <ore:blockGlassHardened>, <ore:plasticBlack>], 
+	[<ore:ingotSmithingIron>, <contenttweaker:research_point_lv1>, <ore:ingotSmithingIron>], 
+	[<ore:blockGlassHardened>, <ore:ingotSmithingIron>, <ore:blockGlassHardened>], 
+	[<ore:plasticBlack>, <ore:blockGlassHardened>, <ore:plasticBlack>], 
+]);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <matteroverdrive:holo_sign>, [
+	[null, <ore:ingotSmithingIron>, <ore:ingotSmithingIron>, <ore:ingotSmithingIron>], 
+	[<ore:plasticBlack>, <ore:blockGlassHardened>, <contenttweaker:research_point_lv1>, <ore:blockGlassHardened>, <ore:plasticBlack>], 
+	[<ore:ingotTritanium>, <ore:plasticBlack>, <contenttweaker:thin_film_transistor>, <ore:plasticBlack>, <ore:ingotTritanium>], 
+	[null, <ore:blockGlassHardened>, <ore:Signalum>, <ore:blockGlassHardened>], 
+]);
+//精英
+mods.extendedcrafting.TableCrafting.addShaped(0, <immersiveengineering:material:27> * 6, [
+	[null, <embers:archaic_brick>, <ore:wireCopper>, null, <ore:wireCopper>, <embers:archaic_brick>, null], 
+	[<embers:archaic_brick>, <ore:wireCopper>, <ore:plateCopper>, <ore:wireCopper>, <ore:plateCopper>, <ore:wireCopper>, <embers:archaic_brick>], 
+	[<embers:archaic_brick>, <ore:wireCopper>, <ore:wireCopper>, <embers:archaic_brick>, <ore:wireCopper>, <ore:wireCopper>, <embers:archaic_brick>], 
+	[<ore:wireCopper>, <ore:blockGlass>, <ore:wireCopper>, <embers:archaic_brick>, <ore:wireCopper>, <ore:blockGlass>, <ore:wireCopper>], 
+	[<ore:blockGlass>, <ore:wireCopper>, <ore:blockGlass>, <embers:archaic_brick>, <ore:blockGlass>, <ore:wireCopper>, <ore:blockGlass>], 
+	[<ore:crystalRedstone>, <ore:plateNickel>, <ore:dustRedstone>, <immersiveengineering:stone_decoration:8>, <ore:dustRedstone>, <ore:plateNickel>, <ore:crystalRedstone>],
+]);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <enderio:item_material>, [
+	[<ore:plateSteel>, null, <ore:plateSteel>, <ore:barsIron>, <ore:plateSteel>, null, <ore:plateSteel>], 
+	[null, <ore:barsIron>, <ore:plateSteel>, <ore:plateIron>, <ore:plateSteel>, <ore:barsIron>, null], 
+	[<ore:plateSteel>, <ore:plateSteel>, <ore:ingotIron>, <ore:ingotElectrum>, <ore:ingotIron>, <ore:plateSteel>, <ore:plateSteel>], 
+	[<ore:barsIron>, <ore:plateLead>, <ore:ingotSteel>, <ore:ingotBronze>, <ore:ingotSteel>, <ore:plateLead>, <ore:barsIron>], 
+	[<ore:plateSteel>, <ore:plateSteel>, <ore:ingotIron>, <ore:ingotElectrum>, <ore:ingotIron>, <ore:plateSteel>, <ore:plateSteel>], 
+	[null, <ore:barsIron>, <ore:plateSteel>, <ore:plateIron>, <ore:plateSteel>, <ore:barsIron>, null], 
+	[<ore:plateSteel>, null, <ore:plateSteel>, <ore:barsIron>, <ore:plateSteel>, null, <ore:plateSteel>]
 ]);

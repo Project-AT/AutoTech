@@ -19,6 +19,7 @@ val specialStageLiquidMap as ILiquidStack[][string] = {
         <liquid:manganese_dioxide>, 
         <liquid:manganese>, 
         <liquid:ethene>,
+        <liquid:molten_tritanium>,
     ],
     "three" : [
         <liquid:germanium_slurry>, 
